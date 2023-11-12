@@ -10870,3 +10870,62 @@ a.ui-button:active,
 .cs_funfact.cs_style_1 .cs_funfact_number {
   margin-bottom: 8px;
 }/*# sourceMappingURL=style.css.map */
+
+.backgroud-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (max-aspect-ratio:16/9) {
+  .backgroud-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio:16/9) {
+  .backgroud-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Move cell */
+.cell{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: 100px;
+}
+
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+
+.without-minheight{
+  min-height: auto !important;
+  padding: 40px 25px !important;
+}
+
+.therapie-icon{
+  width: 35px;
+  height: 30px;
+  margin: 1px;
+  margin-right: 5px;
+  vertical-align: text-top;
+}
