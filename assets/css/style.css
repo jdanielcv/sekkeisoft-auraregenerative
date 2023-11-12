@@ -10929,3 +10929,21 @@ img.vert-move {
   margin-right: 5px;
   vertical-align: text-top;
 }
+
+
+.videoContainer {
+  border-radius: 5px;
+  background-attachment: scroll;
+  overflow: hidden;
+}
+.videoContainer video {
+  position: relative;
+  z-index: 1;
+}
+.videoContainer .overlay {
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: green;
+  opacity: 0.5;
+}
