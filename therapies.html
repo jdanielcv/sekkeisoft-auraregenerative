@@ -35,13 +35,14 @@
     </div>
     <!-- End Preloader -->
     <!-- Start Header Section -->
-    <header class="cs_site_header cs_style1 cs_sticky_header cs_heading_color">
+    <header class="cs_site_header cs_style1 cs_sticky_header cs_white_color" style="background-color: #274760;">
       <div class="cs_main_header">
         <div class="container">
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a class="cs_site_branding" href="index.html">
-                <img src="assets/img/logo.svg" alt="Logo">
+                <img src="assets/img/logo.png" alt="Logo" style="height: 70px; width: 140px;">
+                <!-- <video src="assets/video/clinic_video.mp4"></video> -->
               </a>
               <nav class="cs_nav">
                 <ul class="cs_nav_list">
@@ -55,12 +56,23 @@
             </div>
             <div class="cs_main_header_right">
               <div class="cs_toolbox">
-                <button class="cs_toolbox_btn cs_sidebar_toggle_btn" type="button">
+                <!-- <button class="cs_toolbox_btn cs_search_toggle_btn" type="button">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.1684 0C5.91146 0 0 5.90944 0 13.164C0 20.4184 5.91146 26.3394 13.1684 26.3394C16.2681 26.3394 19.1188 25.2535 21.3719 23.4505L26.8571 28.931C27.1339 29.1962 27.5036 29.3426 27.887 29.3386C28.2704 29.3347 28.6371 29.1809 28.9084 28.91C29.1797 28.6392 29.3342 28.2729 29.3386 27.8896C29.3431 27.5064 29.1972 27.1365 28.9322 26.8595L23.4471 21.3762C25.2521 19.1204 26.3397 16.2662 26.3397 13.164C26.3397 5.90944 20.4254 0 13.1684 0ZM13.1684 2.926C18.8435 2.926 23.4099 7.49078 23.4099 13.164C23.4099 18.8371 18.8435 23.4134 13.1684 23.4134C7.4933 23.4134 2.92695 18.8371 2.92695 13.164C2.92695 7.49078 7.4933 2.926 13.1684 2.926Z" fill="currentColor"/>
+                    </svg>                    
+                  </button> -->
+                <button class="cs_toolbox_btn cs_sidebar_toggle_btn cs_white_color" type="button">
                   <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.483887 2.46544C0.483887 1.10383 1.14618 0 1.96315 0H33.5208C34.3377 0 35 1.10383 35 2.46544C35 3.82708 34.3377 4.93088 33.5208 4.93088H1.96315C1.14618 4.93088 0.483887 3.82708 0.483887 2.46544Z" fill="currentColor"/>
-                    <path d="M0.483887 14.6694C0.483887 13.3074 1.14618 12.2039 1.96315 12.2039H33.5208C34.3377 12.2039 35 13.3074 35 14.6694C35 16.0309 34.3377 17.1348 33.5208 17.1348H1.96315C1.14618 17.1348 0.483887 16.0309 0.483887 14.6694Z" fill="currentColor"/>
-                    <path d="M0.483887 26.6267C0.483887 25.2648 1.14618 24.1613 1.96315 24.1613H33.5208C34.3377 24.1613 35 25.2648 35 26.6267C35 27.9883 34.3377 29.0922 33.5208 29.0922H1.96315C1.14618 29.0922 0.483887 27.9883 0.483887 26.6267Z" fill="currentColor"/>
-                  </svg>                    
+                    <path
+                      d="M0.483887 2.46544C0.483887 1.10383 1.14618 0 1.96315 0H33.5208C34.3377 0 35 1.10383 35 2.46544C35 3.82708 34.3377 4.93088 33.5208 4.93088H1.96315C1.14618 4.93088 0.483887 3.82708 0.483887 2.46544Z"
+                      fill="currentColor" />
+                    <path
+                      d="M0.483887 14.6694C0.483887 13.3074 1.14618 12.2039 1.96315 12.2039H33.5208C34.3377 12.2039 35 13.3074 35 14.6694C35 16.0309 34.3377 17.1348 33.5208 17.1348H1.96315C1.14618 17.1348 0.483887 16.0309 0.483887 14.6694Z"
+                      fill="currentColor" />
+                    <path
+                      d="M0.483887 26.6267C0.483887 25.2648 1.14618 24.1613 1.96315 24.1613H33.5208C34.3377 24.1613 35 25.2648 35 26.6267C35 27.9883 34.3377 29.0922 33.5208 29.0922H1.96315C1.14618 29.0922 0.483887 27.9883 0.483887 26.6267Z"
+                      fill="currentColor" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -179,14 +191,16 @@
           <p class="mb-0">Sort by</p>
           <ul class="cs_mp0">
             <li class="active"><a href="#" data-filter="*">All</a></li>
-            <li><a href="#" data-filter=".emergency">Emergency</a></li>
-            <li><a href="#" data-filter=".pediatric">Pediatric</a></li>
-            <li><a href="#" data-filter=".cardiology">Cardiology</a></li>
-            <li><a href="#" data-filter=".psychiatry">Psychiatry</a></li>
-            <li><a href="#" data-filter=".others">Others</a></li>
+            <li><a href="#" data-filter=".neurological">Neurological</a></li>
+            <li><a href="#" data-filter=".look">Look healthy</a></li>
+            <li><a href="#" data-filter=".traumatology">Traumatology</a></li>
+            <li><a href="#" data-filter=".immune">Immune system</a></li>
+            <li><a href="#" data-filter=".cardiovascular">Cardiovascular</a></li>
+            <li><a href="#" data-filter=".wound">Wound healthy</a></li>
+            <li><a href="#" data-filter=".respiratory">Respiratory</a></li>
           </ul>
         </div>
-        <div class="cs_view_box">
+     <!--   <div class="cs_view_box">
           <span>Showing 12 items</span>
           <div class="cs_view_box_in">
             <button type="button" class="cs_grid_view active">
@@ -200,29 +214,175 @@
               </svg>                
             </button>
           </div>
-        </div>
+        </div>-->
       </div>
       <div class="cs_height_65"></div>
-      <div class="cs_isotop cs_style1 cs_grid_view_wrap cs_isotop_col_3 cs_has_gutter_24">
+      <div class="cs_isotop cs_style_1 cs_grid_view_wrap cs_isotop_col_3 cs_has_gutter_24">
         <div class="cs_grid_sizer"></div>
-        <div class="cs_isotop_item emergency">
+        <div class="cs_isotop_item look" >
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_1.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Emergency Department</div>
+              <a href="anti-aging-therapie.html" class="d-block"><img src="assets/img/therapies/anti-aging.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Anti-Aging Therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Lisa Chen, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Emergency Medicine Specialist</p>
-                <p class="cs_member_description">Dr. Chen has over 10 years of experience in emergency medicine and is board certified in emergency medicine. She has a special interest in critical care and trauma management.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Reverse the signs of aging with stem cell therapy. Our anti-aging therapies can promote tissue regeneration and repair, resulting in a more youthful appearance. Say goodbye to fine lines and wrinkles and hello to a more radiant you.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item neurological">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="neurological-therapie.html" class="d-block"><img src="assets/img/therapies/neurological.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Neurological therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Regain your quality of life with our neurological therapies. Using stem cell therapy, we can promote the regeneration and repair of damaged nerve tissue.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item neurological">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="parkinson-therapie.html" class="d-block"><img src="assets/img/therapies/neurological.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Parkinson therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item neurological">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="alzheimer-therapie.html" class="d-block"><img src="assets/img/therapies/neurological.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Alzheimer therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item neurological">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="autism-therapie.html" class="d-block"><img src="assets/img/therapies/neurological.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Autism therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item neurological">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="postStroke-therapie.html" class="d-block"><img src="assets/img/therapies/neurological.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">PostStroke therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item immune">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="immune-therapie.html" class="d-block"><img src="assets/img/therapies/immune-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Immune system therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Build and maintain a healthy immune system with our immune system therapies. Stem cell therapy can help you achieve optimal health and wellness by promoting a healthy immune system.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item look">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="cosmetic-therapie.html" class="d-block"><img src="assets/img/therapies/cosmetic-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Cosmetic therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Enhance your natural beauty with our cosmetic therapies. Using stem cell therapy, we can promote the regeneration and repair of damaged tissue, helping you achieve a more youthful and radiant appearance.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item immune">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="cancer-therapie.html" class="d-block"><img src="assets/img/therapies/cancer-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Cancer therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cell therapy can also be used to target cancer cells directly. Researchers are exploring the use of genetically 
+                  modified stem cells to deliver targeted therapies directly to cancer cells.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item cardiovascular">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="cardiovascular-therapie.html" class="d-block"><img src="assets/img/therapies/cardio-vascular-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Cardiovascular therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">One of the most promising applications of stem cell therapy for cardiovascular disease is the regeneration of heart tissue. After a heart attack, the heart muscle is often damaged, 
+                  which can lead to decreased cardiac function and an increased risk of future heart events.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item wound">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="wound-healing-therapie.html" class="d-block"><img src="assets/img/therapies/wound-healing-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Wound healing therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cells have the ability to differentiate into various cell types, including skin cells, blood vessels, and connective tissue cells. By injecting stem cells into the site of a wound, 
+                  we can promote the regeneration of new tissue, which can speed up the healing process.</p>
+              </div>
+              <div>
               </div>
             </div>
           </div>
@@ -230,247 +390,195 @@
         <div class="cs_isotop_item pediatric">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_2.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Emergency Department</div>
+              <a href="pain-management-therapie.html" class="d-block"><img src="assets/img/therapies/pain-management-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Pain management therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Michael Johnson, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Emergency Medicine Specialist</p>
-                <p class="cs_member_description">Dr. Johnson is a highly experienced emergency medicine physician with over 15 years of experience. He is board-certified in emergency medicine and has a special interest in disaster management.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cell therapy can promote tissue regeneration and repair, reducing pain and improving overall quality of life for patients with chronic pain. Stem cells can promote the growth of new tissue and 
+                  stimulate the production of growth factors that reduce inflammation, which can help to alleviate pain and discomfort.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item emergency">
+        <div class="cs_isotop_item traumatology">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_3.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Emergency Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/sports-medicine-1.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Sports Medicine Therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Karen Lee, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Emergency Medicine Specialist</p>
-                <p class="cs_member_description">Dr. Lee is a skilled emergency medicine physician with expertise in the treatment of acute medical conditions. She is board-certified in emergency medicine and has a special interest in cardiac.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">By promoting tissue regeneration and repair, stem cell therapy can help athletes recover from injuries faster and reduce the risk of future injuries. Stem cell therapy can promote the regeneration and 
+                  repair of damaged tissue, helping athletes recover faster from injuries and get back to their best performance.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item cardiology others">
+        <div class="cs_isotop_item respiratory">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_4.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Pediatric Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/respiratory.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Respiratory therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Sarah Patel, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Pediatrician</p>
-                <p class="cs_member_description">Dr. Patel is a compassionate pediatrician with over 15 years of experience. She is board-certified in pediatrics and has a special interest in preventive care and childhood development.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cell therapy can promote the regeneration and repair of damaged lung tissue, improving overall respiratory health. By promoting the growth of new lung tissue and reducing inflammation, stem cell 
+                  therapy can help patients with respiratory conditions breathe easier and improve their quality of life.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item emergency">
+        <div class="cs_isotop_item traumatology">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_5.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Pediatric Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/orthopedic-therapies.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Orthopedic therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. David Nguyen, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Pediatrician</p>
-                <p class="cs_member_description">Dr. Nguyen is a highly skilled pediatrician with expertise in the treatment of common childhood illnesses and conditions. She is board-certified in pediatrics</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Patients with orthopedic conditions can improve their joint health and mobility with stem cell therapy. Stem cell therapy can encourage the regeneration and repair of damaged joint tissue, 
+                  which can promote the growth of new tissue and reduce inflammation. This can help patients move freely and without pain.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item cardiology psychiatry others">
+        <div class="cs_isotop_item look">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_6.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Pediatric Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/hair-restoration.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Hair restoration therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Susan Bones, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Pediatrician</p>
-                <p class="cs_member_description">Dr. Bones is a dedicated pediatrician with a focus on providing comprehensive care to children of all ages. He is board-certified in pediatrics and has a special interest in childhood obesity</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cell therapy can promote hair growth and thickness, helping patients achieve a fuller head of hair. By promoting the growth of new hair follicles and improving blood flow to the scalp, 
+                  stem cell therapy can help patients regain their confidence and improve their overall appearance.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item psychiatry others">
+        <div class="cs_isotop_item look">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_7.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Dr. James Lee, MD</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/skin-reju.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Skin rejuvenation therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Lisa Chen, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Cardiologist</p>
-                <p class="cs_member_description">Dr. Lee is a skilled cardiologist with expertise in the diagnosis and treatment of cardiovascular disease. He is board-certified in cardiology and has a special interest in preventive cardiology.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">The use of stem cell therapy can help patients achieve a youthful and radiant appearance by promoting the regeneration and repair of damaged skin tissue. It can facilitate the growth of new skin cells, 
+                  leading to an increase in collagen and protein production.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item">
+        <div class="cs_isotop_item traumatology">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_8.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Emergency Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/anti-inflam.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Anti-inflammatory therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Michelle Kim, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Cardiologist</p>
-                <p class="cs_member_description">Dr. Kim is a renowned cardiologist with over 20 years of experience. She is board-certified in cardiology and has a special interest in the treatment of heart failure and arrhythmias.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cell therapy has the potential to reduce inflammation, promote tissue regeneration and repair, and improve overall quality of life for patients suffering from chronic inflammatory conditions. By stimulating 
+                  the growth of new tissue and reducing inflammation, stem cell therapy can help patients manage pain and discomfort.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item pediatric psychiatry">
+        <div class="cs_isotop_item look">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_9.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Emergency Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/detoxification.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Detoxification therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. John Smith, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Cardiologist</p>
-                <p class="cs_member_description">Dr. Smith is a board-certified cardiologist with extensive experience in the management of complex cardiac conditions. He has a special interest in interventional cardiology</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Stem cell therapy can promote the growth of new tissue and support the natural detoxification processes of the body by targeting and repairing damaged cells and tissues. This can improve the body’s overall 
+                  function and help to reduce the risk of chronic diseases and illnesses caused by toxins and harmful substances.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item cardiology">
+        <div class="cs_isotop_item pediatric">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_10.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Psychiatry Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/respiratory.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Long covid therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Sarah Lee, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Psychiatrist</p>
-                <p class="cs_member_description">With more than 15 years of experience learning human psychology and behavior, Dr. Jones is an expert in managing mood disorders and anxiety disorders</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item cardiology">
+        <div class="cs_isotop_item respiratory">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_11.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Psychiatry Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/respiratory.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Long covid therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. David Park, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Psychiatrist</p>
-                <p class="cs_member_description">Dr. Park is a board-certified psychiatrist with over 10 years of experience. He has a special interest in addiction psychiatry and the treatment of substance use disorders.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
-        <div class="cs_isotop_item pediatric psychiatry">
+        <div class="cs_isotop_item respiratory">
           <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
             <div class="cs_member_img">
-              <a href="doctor-details.html" class="d-block"><img src="assets/img/doctors/doctor_12.png" alt="Doctor"></a>
-              <div class="cs_label cs_white_color cs_accent_bg">Psychiatry Department</div>
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/respiratory.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">Asthma therapies</div>
             </div>
             <div class="cs_team_meta cs_white_bg">
-              <div>
-                <h3 class="cs_member_name cs_fs_32"><a href="doctor-details.html">Dr. Maria Rodriguez, MD</a></h3>
-                <p class="cs_member_designation cs_heading_color cs_medium">Psychiatrist</p>
-                <p class="cs_member_description">Dr. Chen is a skilled psychiatrist with expertise in the treatment of mood disorders and psychotic disorders. She is board-certified in psychiatry and has a special interest in the management.</p>
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
               </div>
               <div>
-                <div class="cs_social_links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
               </div>
             </div>
           </div>
         </div><!-- .cs_isotop_item -->
+        <div class="cs_isotop_item respiratory">
+          <div class="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
+            <div class="cs_member_img">
+              <a href="doctor-details.html" class="d-block"><img src="assets/img/therapies/respiratory.jpg" style="height: 20rem;" alt="Doctor"></a>
+              <div class="cs_label cs_white_color cs_accent_bg">EPOC therapies</div>
+            </div>
+            <div class="cs_team_meta cs_white_bg">
+              <div style="height: 10rem;">
+                <p class="cs_member_description">Necesito la misma cantidad de texto para que los recuadros no pierdan el tamño igual, asi que se necesita ser muy preciso, con el texto que se ingrese, gracias.</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .cs_isotop_item -->
+
       </div>
       <div class="cs_height_60"></div>
+      <!-----------------------------------Muestra todas las opciones y esta paginación no encontre como implementarla------------------------------------------------->
       <ul class="cs_pagination_box">
         <li>
           <a href="#" class="cs_pagination_arrow cs_center">
@@ -499,7 +607,6 @@
         </li>
       </ul>
     </div>
-    <div class="cs_height_200 cs_height_xl_150 cs_height_lg_110"></div>
     <!-- End All Doctors -->
     <!-- Start Banner Section -->
     <section class="cs_footer_margin_0">
