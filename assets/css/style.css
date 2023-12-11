@@ -10947,3 +10947,16 @@ img.vert-move {
   background: green;
   opacity: 0.5;
 }
+
+.therapie-detail-img{
+  height: 894px; 
+  width: 850px; 
+  padding-left: 100px; 
+  border-radius: 10px;
+}
+
+/* @media (max-width: 1700px){
+  .backgroud-video{
+    
+  }
+} */
