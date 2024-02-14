@@ -25,6 +25,7 @@
 
 <body>
   <!-- Start Preloader -->
+ 
   <div class="cs_perloader">
     <div class="cs_perloader_in">
       <div class="cs_wave_first">
@@ -45,7 +46,7 @@
   <!-- Start Header Section -->
   <header class="cs_site_header cs_style1 cs_sticky_header cs_white_color" style="background-color: #274760;">
     <div class="cs_main_header">
-      <div class="container">
+      <div class="container" id="menu">
         <div class="cs_main_header_in">
           <div class="cs_main_header_left">
             <a class="cs_site_branding" href="index.html">
@@ -54,12 +55,13 @@
             </a>
             <nav class="cs_nav">
               <ul class="cs_nav_list">
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html" id="home">home</a> </li>
+                <li><a href="about.html" id="about">About us</a></li>
+                <li><a href="services.html" id="services">Services</a></li>
                 <li><a href="faqs-mexico.html">FAQs</a></li>
-                <li><a href="appointments.html">Contact</a></li>
+                <li><a href="appointments.html" id="contact">Contact</a></li>
               </ul>
+         
             </nav>
           </div>
           <div class="cs_main_header_right">
@@ -83,6 +85,12 @@
                 </svg>
               </button>
             </div>
+            <nav style="padding-left: 5rem;">
+              <ul>
+                  <li><a href="#" id="english">English</a></li>
+                  <li><a href="#" id="spanish">Spanish</a></li>
+              </ul>
+          </nav>
           </div>
         </div>
       </div>
@@ -95,7 +103,7 @@
       <div class="cs_logo_box">
         <img src="assets/img/logo.png" alt="Logo" style="height: 50px; width: 100px;">
         <div class="cs_height_15"></div>
-        <h3 class="cs_fs_24 cs_semibold mb-0">Providing patients with the most advanced and effective
+        <h3 class="cs_fs_24 cs_semibold mb-0" id="subTitle">Providing patients with the most advanced and effective
           therapies, nothing less.</h3>
       </div>
       <div class="cs_height_35"></div>
@@ -106,7 +114,7 @@
           <img src="assets/img/contact/icon_1.svg" alt="Icon">
         </div>
         <div class="cs_iconbox_right">
-          <h3 class="cs_iconbox_title cs_fs_24 mb-0">Phone</h3>
+          <h3 class="cs_iconbox_title cs_fs_24 mb-0" id="phone">Phone</h3>
           <p class="cs_iconbox_subtitle mb-0 cs_heading_color"><a href="tel:+528114853735">+52 81 1485 3735</a></p>
         </div>
       </div>
@@ -127,7 +135,7 @@
           <img src="assets/img/contact/icon_3.svg" alt="Icon">
         </div>
         <div class="cs_iconbox_right">
-          <h3 class="cs_iconbox_title cs_fs_24 mb-0">Location</h3>
+          <h3 class="cs_iconbox_title cs_fs_24 mb-0" id="location">Location</h3>
           <p class="cs_iconbox_subtitle mb-0 cs_heading_color">Nuevo León, México</p>
         </div>
       </div>
@@ -150,7 +158,7 @@
       <hr>
       <div class="cs_height_70 cs_height_lg_50"></div>
       <div class="cs_social_links_wrap">
-        <h2>Follow Us</h2>
+        <h2 id="follow">Follow Us</h2>
         <div class="cs_social_links">
           <a href="https://www.facebook.com/auraregenerativeofficial"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://twitter.com/AuraRC_Official"><i class="fa-brands fa-twitter"></i></a>
@@ -163,6 +171,7 @@
   <!-- End Header Section -->
   <!-- Start Hero -->
   <section class="cs_hero cs_style_2 cs_bg_filed ">
+
     <!-- data-src="assets/img/aura/clinic.jpeg" -->
     <video autoplay loop muted class="backgroud-video">
       <source src="assets/video/clinic_video.mp4" type="video/mp4">
@@ -174,7 +183,7 @@
           <!-- <div class="cs_hero_btn cs_white_color">
               <a href="" class="cs_text_btn">Pro Health</a>
             </div> -->
-          <p class="cs_hero_subtitle cs_white_color cs_fs_24" >
+          <p class="cs_hero_subtitle cs_white_color cs_fs_24" id="subTitle2">
             Providing patients with the most advanced and effective therapies, nothing less.
           </p>
         </div>
@@ -190,21 +199,22 @@
   <!-- Start Departement Section -->
   <div class="cs_height_70 cs_height_lg_30"></div>
   <section>
+  
     <div class="container">
       <div class="cs_section_heading cs_style_1 text-center">
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">OUR
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="ourTherapies">OUR
           THERAPIES</h3>
         <div class="cs_height_5"></div>
-        <h2 class="cs_section_title cs_fs_72 m-0">For Your Health</h2>
+        <h2 class="cs_section_title cs_fs_72 m-0" id="yourHealth">For Your Health</h2>
       </div>
       <div class="cs_height_72 cs_height_lg_50"></div>
       <div class="row">
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">SERUM THERAPIES</h3>
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="serum">SERUM THERAPIES</h3>
         <div class="col-xl-4 col-md-6">
           <a href="wellness-drip.html" class="cs_iconbox cs_style_2 without-minheight">
-            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold m-0"><img
+            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold m-0"  ><img
                 src="assets/img/aura/icon/wellness-drip.svg" class="therapie-icon" />
-                Wellness drip</h2>
+                <span id="wellnessDrip">Wellness drip</span></h2>
           </a>
         </div>
         <div class="col-xl-4 col-md-6">
@@ -315,7 +325,7 @@
             </h2>
           </a>
         </div>
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">INFUSION OF SPECIALIZED MEDICATIONS</h3>
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="infusion">INFUSION OF SPECIALIZED MEDICATIONS</h3>
 
         <div class="col-xl-4 col-md-6">
           <a href="oncology-medications.html" class="cs_iconbox cs_style_2 without-minheight">
@@ -335,7 +345,7 @@
             </h2>
           </a>
         </div>
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">AESTHETIC MEDICINE</h3>
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="aestheticMedicine">AESTHETIC MEDICINE</h3>
 
         <div class="col-xl-4 col-md-6">
           <a href="botox.html" class="cs_iconbox cs_style_2 without-minheight">
@@ -382,14 +392,14 @@
             </h2>
           </a>
         </div>
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">SPECIAL CONSULT</h3>
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="specialConsult">SPECIAL CONSULT</h3>
 
         <div class="col-xl-4 col-md-6">
           <a href="internal-medicine.html" class="cs_iconbox cs_style_2 without-minheight">
 
             <h2 class="cs_iconbox_title cs_fs_32 cs_semibold m-0">
               <img src="assets/img/aura/icon/internal-medicine.svg" class="therapie-icon" />
-              Internal Medicine
+              Internal medicine
             </h2>
           </a>
         </div>
@@ -411,7 +421,7 @@
             </h2>
           </a>
         </div>
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">ALTERNATIVE MEDICINE</h3>
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="alternative">ALTERNATIVE MEDICINE</h3>
 
         <div class="col-xl-4 col-md-6">
           <a href="neurotherapy.html" class="cs_iconbox cs_style_2 without-minheight">
@@ -431,7 +441,7 @@
             </h2>
           </a>
         </div>-->
-        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">LABORATORIES</h3>
+        <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32"  id="laboratories">LABORATORIES</h3>
 
         <div class="col-xl-4 col-md-6">
           <a href="general-laboratories.html" class="cs_iconbox cs_style_2 without-minheight">
@@ -470,12 +480,12 @@
       <div class="row align-items-end cs_gap_y_50">
         <div class="col-xl-6">
           <div class="cs_section_heading cs_style_1">
-            <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">
+            <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="aboutUs">
               ABOUT US</h3>
             <div class="cs_height_5"></div>
             <h2 class="cs_section_title cs_fs_72 m-0">AURA by Dr. Fernando Hernandez</h2>
             <div class="cs_height_85 cs_height_xl_40 cs_height_lg_30"></div>
-            <p class="m-0">At ARC, we understand firsthand the transformative power of therapies. Each member of
+            <p class="m-0" id="aboutText">At ARC, we understand firsthand the transformative power of therapies. Each member of
               our team has a personal connection to someone who has been helped by this groundbreaking treatments, which
               is why we are so passionate about bringing its benefits to as many people as possible.</p>
 
@@ -483,7 +493,7 @@
           <div class="cs_height_30"></div>
           <div class="col-lg-12">
             <a class="cs_btn cs_style_1" href="about.html">
-              <span>Read more</span>
+              <span id="read">Read more</span>
               <i>
                 <img src="assets/img/icons/arrow_white.svg" alt="Icon">
                 <img src="assets/img/icons/arrow_white.svg" alt="Icon">
@@ -702,7 +712,7 @@
     <!-- <div class="cs_height_185 cs_height_xl_140 cs_height_lg_100"></div> -->
     <div class="container">
       <div class="cs_section_heading cs_style_1 text-center">
-        <h2 class="cs_section_title cs_fs_72 m-0">How it Works</h2>
+        <h2 class="cs_section_title cs_fs_72 m-0" id="howWork">How it Works</h2>
       </div>
       <div class="cs_height_105 cs_height_lg_50"></div>
       <div class="cs_iconbox_3_wrap">
@@ -721,8 +731,8 @@
           </div>
           <div class="cs_iconbox_right">
             <h4 class="cs_iconbox_number">01</h4>
-            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold">Schedule an evaluation</h2>
-            <p class="cs_iconbox_subtitle m-0">The first step is to schedule an evaluation  <br> by our medical professionals, either in person <br>  or by video call</p>
+            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold" id="firstStepTitle">Schedule an evaluation</h2>
+            <p class="cs_iconbox_subtitle m-0"><span id="firstStepText">The first step is to schedule an evaluation</span>  <br><span id="firstStepText2">by our medical professionals, either in person</span>  <br> <span id="firstStepText3"> or by video call</span> </p>
           </div>
         </div>
         <div class="cs_iconbox cs_style_3">
@@ -746,8 +756,8 @@
           </div>
           <div class="cs_iconbox_right">
             <h4 class="cs_iconbox_number">02</h4>
-            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold">Evaluation</h2>
-            <p class="cs_iconbox_subtitle m-0">Our professionals will ask about your medical <br> history, current treatment, supplementation <br> and join therapies, in order to find <br>the best medical therapy for you.</p>
+            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold" id="secondStepTitle">Evaluation</h2>
+            <p class="cs_iconbox_subtitle m-0"><span id="secondStepText">Our professionals will ask about your medical</span> <br><span id="secondStepText2">history, current treatment, supplementation</span>  <br><span id="secondStepText3">and join therapies, in order to find</span>  <br><span id="secondStepText4">the best medical therapy for you.</span></p>
           </div>
         </div>
         <div class="cs_iconbox cs_style_3">
@@ -783,8 +793,8 @@
           </div>
           <div class="cs_iconbox_right">
             <h4 class="cs_iconbox_number">03</h4>
-            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold">Know more about you</h2>
-            <p class="cs_iconbox_subtitle m-0">If you decide to move forward in the process, <br>it's probably that we will need one or more <br>video calls to improve you experience.</p>
+            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold" id="thirdStepTitle">Know more about you</h2>
+            <p class="cs_iconbox_subtitle m-0"> <span id="thirdStepText">If you decide to move forward in the process,</span> <br><span id="thirdStepText2">it's probably that we will need one or more</span> <br><span id="thirdStepText3">video calls to improve you experience.</span></p>
           </div>
         </div>
         <div class="cs_iconbox cs_style_3">
@@ -842,8 +852,8 @@
           </div>
           <div class="cs_iconbox_right">
             <h4 class="cs_iconbox_number">04</h4>
-            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold">Meet with Our Healthcare <br>Professionals</h2>
-            <p class="cs_iconbox_subtitle m-0">On the day of your treatment we will<br> have everything ready to give you the best <br>experience in medical therapies.</p>
+            <h2 class="cs_iconbox_title cs_fs_32 cs_semibold"><span id="fourthStepTitle">Meet with Our Healthcare </span><br><span id="fourthStepTitle2">Professionals</span></h2>
+            <p class="cs_iconbox_subtitle m-0"><span id="fourthStepText">On the day of your treatment we will</span><br><span id="fourthStepText2">have everything ready to give you the best</span>  <br><span id="fourthStepText3">experience in medical therapies.</span></p>
           </div>
         </div>
       </div>
@@ -857,10 +867,10 @@
       <div class="cs_banner cs_style_2 cs_radius_25 cs_bg_filed" data-src="assets/img/aura/aura-clinic-customer.jpg">
 
         <div class="cs_section_heading cs_style_1">
-          <p class="cs_section_title cs_fs_72 m-0 cs_black_color">Are you ready?</p>
-          <h2 class="cs_section_title cs_fs_72 m-0 cs_black_color">Let's Get Started</h2>
+          <p class="cs_section_title cs_fs_72 m-0 cs_black_color" id="youReady">Are you ready?</p>
+          <h2 class="cs_section_title cs_fs_72 m-0 cs_black_color" id="letStart">Let's Get Started</h2>
           <div class="cs_height_22"></div>
-          <p class="m-0 cs_black_color cs_fs_20 cs_medium">Trust us to help you achieve optimal health and wellness
+          <p class="m-0 cs_black_color cs_fs_20 cs_medium" id="trustUs">Trust us to help you achieve optimal health and wellness
             through the power of therapies. Contact us today to learn more about our services and schedule a
             consultation with one of our expert medical professionals.</p>
 
@@ -877,10 +887,9 @@
       <div class="row">
         <div class="col-xxl-4">
           <div class="cs_section_heading cs_style_1">
-            <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">What
-              People</h3>
+            <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="whatPeople">What People</h3>
             <div class="cs_height_5"></div>
-            <h2 class="cs_section_title cs_fs_72 m-0">Usually Asked</h2>
+            <h2 class="cs_section_title cs_fs_72 m-0" id="usuallyAsked">Usually Asked</h2>
           </div>
           <div class="cs_height_70 cs_height_lg_50"></div>
         </div>
@@ -889,7 +898,7 @@
         <div class="col-xxl-8 offset-xxl-4">
           <div class="cs_accordians cs_style1 cs_type_1 cs_heading_color">
             <div class="cs_accordian">
-              <h2 class="cs_accordian_head cs_heading_color">
+              <h2 class="cs_accordian_head cs_heading_color" id="firstQuestion">
                 At what age is it indicated to start aesthetic treatments?
                 <span class="cs_accordian_arrow">
                   <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -900,11 +909,11 @@
                 </span>
               </h2>
               <div class="cs_accordian_body">
-                <p>As a preventive treatment, there is no specific age. The beginning is marked by the type of skin, at the age of 20 creams are enough and some treatments can be applied as preventives or with anti-aging purposes.</p>
+                <p id="firstAnswer">As a preventive treatment, there is no specific age. The beginning is marked by the type of skin, at the age of 20 creams are enough and some treatments can be applied as preventives or with anti-aging purposes.</p>
               </div>
             </div><!-- .cs_accordian -->
             <div class="cs_accordian">
-              <h2 class="cs_accordian_head cs_heading_color">
+              <h2 class="cs_accordian_head cs_heading_color" id="fourthQuestion">
                 What is serum therapy and what is its objective?
                 <span class="cs_accordian_arrow">
                   <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -915,11 +924,11 @@
                 </span>
               </h2>
               <div class="cs_accordian_body">
-                <p>It consists of intravenously administering specific serums that promote self-healing and the proper functioning of our body from a selection of vitamins, minerals, trace elements and natural biological drugs according to the specific needs of each person and without using artificial preservatives.</p>
+                <p id="fourthAnswer">It consists of intravenously administering specific serums that promote self-healing and the proper functioning of our body from a selection of vitamins, minerals, trace elements and natural biological drugs according to the specific needs of each person and without using artificial preservatives.</p>
               </div>
             </div><!-- .cs_accordian -->
             <div class="cs_accordian active">
-              <h2 class="cs_accordian_head cs_heading_color">
+              <h2 class="cs_accordian_head cs_heading_color" id="fifthQuestion">
                 Which people are candidates to use it?
                 <span class="cs_accordian_arrow">
                   <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -930,11 +939,11 @@
                 </span>
               </h2>
               <div class="cs_accordian_body">
-                <p>Anyone can use serum therapy, patients with acute or chronic degenerative diseases, in convalescent states after an illness or operation, people with a high workload and/or stress, people with obesity or athletes or simply healthy people looking to prevent diseases and optimize physical and intellectual performance.</p>
+                <p id="fifthAnswer">Anyone can use serum therapy, patients with acute or chronic degenerative diseases, in convalescent states after an illness or operation, people with a high workload and/or stress, people with obesity or athletes or simply healthy people looking to prevent diseases and optimize physical and intellectual performance.</p>
               </div>
             </div><!-- .cs_accordian -->
             <div class="cs_accordian">
-              <h2 class="cs_accordian_head cs_heading_color">
+              <h2 class="cs_accordian_head cs_heading_color" id="seventhQuestion">
                 What is infusion therapy?
                 <span class="cs_accordian_arrow">
                   <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -944,12 +953,12 @@
                   </svg>
                 </span>
               </h2>
-              <div class="cs_accordian_body">
-                <p>Infusion therapy involves administering medications through a needle or catheterization. It is generally prescribed when a patient's condition cannot be treated with oral medications.</p>
+              <div class="cs_accordian_body" >
+                <p id="seventhAnswer">Infusion therapy involves administering medications through a needle or catheterization. It is generally prescribed when a patient's condition cannot be treated with oral medications.</p>
               </div>
             </div><!-- .cs_accordian -->
             <div class="cs_accordian">
-              <h2 class="cs_accordian_head cs_heading_color">
+              <h2 class="cs_accordian_head cs_heading_color" id="nineQuestion">
                 Is infusion therapy covered by health insurance?
                 <span class="cs_accordian_arrow">
                   <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -960,7 +969,7 @@
                 </span>
               </h2>
               <div class="cs_accordian_body">
-                <p>It depends on the service needed but almost the majority are covered by medical insurance (With prior authorization from the insurer).</p>
+                <p id="nineAnswer">It depends on the service needed but almost the majority are covered by medical insurance (With prior authorization from the insurer).</p>
               </div>
             </div><!-- .cs_accordian -->
           </div><!-- .cs_accordians -->
@@ -981,20 +990,20 @@
       <div class="row">
         <div class="offset-lg-6 col-lg-6">
           <div class="cs_section_heading cs_style_1">
-            <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">BOOK
+            <h3 class="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" id="bookAn">BOOK
               AN</h3>
             <div class="cs_height_5"></div>
-            <h2 class="cs_section_title cs_fs_72 m-0">Appointment</h2>
+            <h2 class="cs_section_title cs_fs_72 m-0" id="appointment">Appointment</h2>
           </div>
           <div class="cs_height_57"></div>
           <form class="row">
             <div class="col-lg-6">
-              <label class="cs_input_label cs_heading_color">Name</label>
+              <label class="cs_input_label cs_heading_color" id="name">Name</label>
               <input type="text" class="cs_form_field" placeholder="David John" id="name" name="name">
               <div class="cs_height_42 cs_height_xl_25"></div>
             </div>
             <div class="col-lg-6">
-              <label class="cs_input_label cs_heading_color">Phone Number</label>
+              <label class="cs_input_label cs_heading_color" id="phoneNumber">Phone Number</label>
               <input type="text" class="cs_form_field" placeholder="(123) 456 - 789" id="phone" name="phone">
               <div class="cs_height_42 cs_height_xl_25"></div>
             </div>
@@ -1004,7 +1013,7 @@
               <div class="cs_height_42 cs_height_xl_25"></div>
             </div>
             <div class="col-lg-6">
-              <label class="cs_input_label cs_heading_color">Preferred Date</label>
+              <label class="cs_input_label cs_heading_color" id="preferredDate">Preferred Date</label>
               <div class="cs_with_icon_input">
                 <input type="text" class="cs_form_field" id="datepicker" placeholder="August 24, 2023" >
                 <i class="fa-solid fa-calendar-days"></i>
@@ -1012,7 +1021,7 @@
               <div class="cs_height_42 cs_height_xl_25"></div>
             </div>
             <div class="col-lg-12">
-              <label class="cs_input_label cs_heading_color">Interest therapy</label>
+              <label class="cs_input_label cs_heading_color" id="interestTherapy">Interest therapy</label>
               <select name="reason_for_visit" class="cs_select" data-placeholder="Reason for visit" id="service" name="service">
                 <!-- <option></option> -->
                 <option value="Wellness drip Therapies">Wellness drip</option>
@@ -1045,13 +1054,13 @@
               <div class="cs_height_42 cs_height_xl_25"></div>
             </div> 
             <div class="col-lg-12">
-              <label class="cs_input_label cs_heading_color">Comments</label>
+              <label class="cs_input_label cs_heading_color" id="commentsForm">Comments</label>
               <input type="text" class="cs_form_field" placeholder="Comments" id="comments" name="comments">
               <div class="cs_height_42 cs_height_xl_25"></div>
             </div>            
             <div class="col-lg-12">
               <button class="cs_btn cs_style_1">
-                <span>Submit</span>
+                <span id="submit">Submit</span>
                 <i>
                   <img src="assets/img/icons/arrow_white.svg" alt="Icon">
                   <img src="assets/img/icons/arrow_white.svg" alt="Icon">
@@ -1147,18 +1156,18 @@
           <div class="col-lg-2">
             <div class="cs_footer_item">
               <ul class="cs_menu_widget cs_mp0">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" id="footerAbout">About Us</a></li>
+                <li><a href="services.html" id="footerService">Services</a></li>
                 <br><br>
                 <li> <i class="cs_accent_bg">
-                </i><a>Certification of point of care regenerative medicine by ISSCA</a></li>
+                </i><a id="certification">Certification of point of care regenerative medicine by ISSCA</a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-2">
             <div class="cs_footer_item">
               <ul class="cs_menu_widget cs_mp0">
-                <li><a href="appointments.html">Contact Us</a></li>
+                <li><a href="appointments.html" id="footerContact">Contact Us</a></li>
                 <li><a href="faqs-mexico.html">FAQs</a></li>
               </ul>
             </div>
@@ -1166,12 +1175,12 @@
           <div class="col-lg-4">
             <div class="cs_footer_item">
               <div class="cs_newsletter cs_style1">
-                <h2 class="cs_newsletter_title">Get Started</h2>
-                <div class="cs_newsletter_subTitle">Contact us today to learn more about our services and schedule a
+                <h2 class="cs_newsletter_title" id="started">Get Started</h2>
+                <div class="cs_newsletter_subTitle" id="contactUs">Contact us today to learn more about our services and schedule a
                   consultation with one of our expert medical professionals.</div>
                 <form action="#" class="cs_newsletter_form">
                   <a class="cs_btn cs_style_1" href="appointments.html">
-                    <span>Submit</span>
+                    <span id="footerSubmit">Submit</span>
                     <i>
                       <img src="assets/img/icons/arrow_white.svg" alt="Icon">
                       <img src="assets/img/icons/arrow_white.svg" alt="Icon">
@@ -1188,7 +1197,7 @@
       <div class="container">
         <div class="cs_footer_bottom_in">
           <div class="cs_social_links_wrap">
-            <h2 class="cs_white_color">Follow Us</h2>
+            <h2 class="cs_white_color" id="footerFollow">Follow Us</h2>
             <div class="cs_social_links">
               <a href="https://www.facebook.com/auraregenerativeofficial"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="https://twitter.com/AuraRC_Official"><i class="fa-brands fa-twitter"></i></a>
@@ -1319,6 +1328,7 @@
       }
     )
   </script>
+  <script src="translate.js"></script>
   <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
   <script src="assets/js/plugins/wow.min.js"></script>
   <script src="assets/js/plugins/slick.min.js"></script>
