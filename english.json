@@ -14,6 +14,7 @@
         "appointment": "Appointment",
         "name": "Name",
         "phoneNumber": "Phone Number",
+        "email":"Email",
         "preferredDate": "Preferred Date",
         "interestTherapy": "Interest therapy",
         "commentsForm": "Comments",

@@ -75,6 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById('appointment').textContent = data.general.appointment;
                 document.getElementById('name').textContent = data.general.name;
                 document.getElementById('phoneNumber').textContent = data.general.phoneNumber;
+                document.getElementById('email-label').textContent = data.general.email;
+                
                 document.getElementById('preferredDate').textContent = data.general.preferredDate;
                 document.getElementById('interestTherapy').textContent = data.general.interestTherapy;
                 document.getElementById('commentsForm').textContent = data.general.comments;

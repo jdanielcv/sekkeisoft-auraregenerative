@@ -14,6 +14,7 @@
         "appointment": "CITA",
         "name": "Nombre",
         "phoneNumber": "Número de teléfono",
+        "email":"Correo electrónico",
         "preferredDate": "Fecha preferida",
         "interestTherapy": "Terapia de interés",
         "comments": "Comentarios",
