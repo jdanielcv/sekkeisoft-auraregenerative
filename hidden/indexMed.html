@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedPro - Next-Gen Healthcare Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="cursor cursor-click" style="left: 1385px; top: 253px;"></div>
+    <div class="loader loaded">
+        <svg viewBox="0 0 80 80">
+            <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+        </svg>
+        <div class="loader-text">MedPro</div>
+    </div>
+
+    <div class="page-wrapper" style="opacity: 1;">
+        <header>
+            <div class="container">
+                <div class="brand">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-heartbeat"></i></span>
+                        <span class="logo-text">Med<span class="highlight">Pro</span></span>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+                    <div class="menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="login-panel">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="panel-header">
+                                        <h2>Welcome back</h2>
+                                        <p>Enter your credentials to access your account</p>
+                                    </div>
+                                    <div class="tab-controls">
+                                        <button class="tab-btn active" data-tab="login">Login</button>
+                                        <button class="tab-btn" data-tab="signup">Sign up</button>
+                                        <div class="tab-indicator"></div>
+                                    </div>
+                                    <form class="login-form">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="fas fa-user"></i>
+                                                <input type="email" placeholder="Email address" required="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="fas fa-lock"></i>
+                                                <input type="password" placeholder="Password" required="">
+                                            </div>
+                                        </div>
+                                        <div class="form-options">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                Remember me
+                                            </label>
+                                            <a href="#" class="forgot-link">Forgot password?</a>
+                                        </div>
+                                        <button type="submit" class="btn-submit">Sign In</button>
+                                        <div class="social-login">
+                                            <p>Or continue with</p>
+                                            <div class="social-icons">
+                                                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                                                <a href="#" class="social-icon"><i class="fab fa-apple"></i></a>
+                                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="visual-elements">
+                                <img src="https://cdn.pixabay.com/photo/2017/03/14/03/20/nurse-2141808_1280.png"
+                                    alt="Healthcare Professional" class="hero-image">
+                                <div class="floating-card card-1">
+                                    <i class="fas fa-shield-virus"></i>
+                                    <span>Secure Access</span>
+                                </div>
+                                <div class="floating-card card-2">
+                                    <i class="fas fa-user-md"></i>
+                                    <span>Expert Care</span>
+                                </div>
+                                <div class="floating-card card-3">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>Easy Scheduling</span>
+                                </div>
+                                <div class="blob-shape"></div>
+                                <div class="blob-shape-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-divider">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                        </path>
+                    </svg>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                document.querySelector('.loader').classList.add('loaded');
+                document.querySelector('.page-wrapper').style.opacity = 1;
+            }, 1500);
+        });
+
+        // Tab switching
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabIndicator = document.querySelector('.tab-indicator');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Move indicator
+                    if (this.dataset.tab === 'login') {
+                        tabIndicator.style.left = '0';
+                    } else {
+                        tabIndicator.style.left = '50%';
+                    }
+                });
+            });
+
+            // Custom cursor
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+
+            document.addEventListener('mousedown', () => {
+                cursor.classList.add('cursor-click');
+            });
+
+            document.addEventListener('mouseup', () => {
+                cursor.classList.remove('cursor-click');
+            });
+
+            // Theme toggle
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-theme');
+                if (document.body.classList.contains('dark-theme')) {
+                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                } else {
+                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                }
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
